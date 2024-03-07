@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,400;8..30,900&family=REM:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Sigmar+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&family=Sigmar+One&family=Young+Serif&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla',serif;
+}
+
+
+.row h2 {
+    font-family: "Sigmar One", sans-serif;
+    font-weight: 800;
+    font-style: bold;
+    display: flex;
+    flex-direction: column;
+    margin-top:3rem;
+    height: 6rem;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    color:var(--main-color);
+}
+  
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    min-width: 35rem;
+    background-color: #80fffb6b;
+}
+
+
+:root{
+    --main-bg :#1e272e;
+    --main-color:#0097e6;
+}
+
+html{
+    font-size: 65.5%;
+}
+
+.row{
+    margin:0;
+}
+
+.main-menu{
+    background-color: var(--main-bg);
+   
+}
+
+
+
+/* error page Code */
+/* SEarch field */
+.temp_form{
+    width: 60%;
+    position: relative;
+    margin: 10rem auto 6rem;
+}
+.temp_form input[type="text"]{
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background: #1e202b;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+
+}
+::placeholder{
+    color: #bfc1c8;
+}
+
+form input[type="submit"]{
+    position:absolute;
+    top:5px;
+    right: 5px;
+    bottom: 4px;
+    border-radius: 3rem;
+    padding:0 3rem;
+    border: none;
+    color: #fff;
+    background-color: #009ad8;
+    font-size: 1.6rem;
+}
+
+form input[type="submit"]:hover{
+    background-color: #fff;
+    color: #009ad8;
+}
+
+
+/* output field */
+.errimg{
+    width: 60rem;
+    height: 30rem;
+}
+
+
+/* weather page */
+
+.tempInformation{
+    width: 50rem;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: #fff;
+    font-family: "Roboto",sans-serif;
+    margin-bottom: 3rem;
+}
+
+
+.tempInformation .top_layer{
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+
+}
+
+.top_layer p{
+    font-size: 1.3rem;
+    padding: 2rem;
+}
+
+
+.main_layer{
+
+    font-size: 1.5rem;
+    padding: 2rem;
+
+}
+.main_layer .middle_layer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.middle_layer p,.middle_layer .fa{
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.fa{
+    color: #009ad8;
+}
+.middle_layer p sup{
+    font-size: 6rem;
+    margin-top: -2rem;
+}
+.data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+#temp_status img{
+    width: 5rem;
+    height: 5rem;
+}
+
+@media (max-width:768px) {
+    
+
+    .temp_form{
+        height:auto;
+        width: auto;
+        margin: 5rem 0;
+    }
+
+    .tempInformation{
+        height:auto;
+        width: auto;
+        margin: 5rem 0;
+    }
+
+}
